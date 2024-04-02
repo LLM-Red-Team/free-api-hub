@@ -1,0 +1,72 @@
+version: '3'
+
+services:
+#kimi
+  kimi-free-api:
+    container_name: kimi-free-api
+    image: vinlic/kimi-free-api:latest
+    hostname: kimifree
+    restart: always
+    ports:
+      - "10013:8000" #10013可以修改，8000不可以修改
+    expose:
+      - "8000"
+    environment:
+      - TZ=Asia/Shanghai
+
+# 智谱清言
+  glm-free-api:
+    container_name: glm-free-api
+    hostname: glmfree
+    image: vinlic/glm-free-api:latest
+    restart: always
+    ports:
+      - "10015:8000"  #10015可以修改，8000不可以修改
+    expose:
+      - "8000"
+    environment:
+      - TZ=Asia/Shanghai
+
+# 通义千问
+  qwen-free-api:
+    container_name: qwen-free-api
+    hostname: qwenfree
+    image: vinlic/qwen-free-api:latest
+    restart: always
+    ports:
+      - "10016:8000"#10015可以修改，8000不可以修改
+    expose:
+      - "8000"
+    environment:
+      - TZ=Asia/Shanghai
+
+# 智谱清言
+  emohaa-free-api:
+    container_name: emohaa-free-api
+    hostname: emohaafree
+    image: vinlic/emohaa-free-api:latest
+    restart: always
+    ports:
+      - "10017:8000"  #10017可以修改，8000不可以修改
+    expose:
+      - "8000"
+    environment:
+      - TZ=Asia/Shanghai
+
+# 跃问
+  step-free-api:
+    container_name: step-free-api
+    hostname: stepfree
+    image: vinlic/step-free-api:latest
+    restart: always
+    ports:
+      - "10019:8000"  #10019可以修改，8000不可以修改
+    expose:
+      - "8000"
+    environment:
+      - TZ=Asia/Shanghai
+      
+      
+      
+      
+# api地址可以使用：http://hostname:prots
