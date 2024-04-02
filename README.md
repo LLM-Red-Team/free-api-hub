@@ -1,7 +1,7 @@
 # free-api-hub
-free-api系列项目集合共享资源
+[free-api系列项目](https://github.com/orgs/LLM-Red-Team/repositories?q=free-api) 集合共享资源
 
-如果您对free-api系列项目感兴趣，欢迎PR分享的内容到本仓库。
+如果您对 [free-api系列项目](https://github.com/orgs/LLM-Red-Team/repositories?q=free-api) 感兴趣，欢迎PR分享的内容到本仓库。
 
 使用说明和URL链接分享PR在本 `README.md` 中
 
