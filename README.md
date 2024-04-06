@@ -11,6 +11,8 @@
 
 非常感谢您的关注和支持！
 
+![demo](https://github.com/LLM-Red-Team/free-api-hub/assets/20235341/5ce7c71d-3a4d-4469-9e4a-24ac9d78cc76)
+
 ## 核心资源
 
 ### all-free-api.yml
