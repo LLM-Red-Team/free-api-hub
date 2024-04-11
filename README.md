@@ -22,3 +22,27 @@ docker-compose一键启动所有free-api的脚本，运行以下命令启动。
 ```shell
 docker-compose -f all-free-api.yml up -d
 ```
+
+### Render容器保活
+
+使用Render部署free-api时，容器在一段时间不活动后会自动回收，导致下次调用响应有近1分钟的延迟，你可以用以下方案保活容器。
+
+#### 方案1：通过任意监控服务调用保活
+
+1. 在你支持监控服务的框架或程序上面配置在Render的free-api地址，如 https://kimi-free-api-nut5.onrender.com 就是 https://kimi-free-api-nut5.onrender.com/ping，需要使用GET请求方法。
+
+2. 配置探测频率，建议5分钟一轮。
+
+#### 方案2：通过j脚本curl调用保活
+
+命令仅适用于Linux系统。
+
+1. 改写 scripts/render_keeplive.sh 文件，将循环遍历的ping地址换成你部署在Render的free-api地址，如 https://kimi-free-api-nut5.onrender.com 就是 https://kimi-free-api-nut5.onrender.com/ping。
+
+2. 运行 `crontab -e` 命令，在打开的编辑器中添加如下内容（/path/to/render_keeplive.sh 替换为你的脚本路径）：
+
+```shell
+*/5 * * * * /path/to/render_keeplive.sh
+```
+
+3. 保存并退出编辑器，可以通过 `tail -f /var/log/cron` 查看脚本被调用的日志。
