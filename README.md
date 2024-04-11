@@ -29,7 +29,7 @@ docker-compose -f all-free-api.yml up -d
 
 #### 方案1：通过任意监控服务调用保活
 
-1. 在你支持监控服务的框架或程序上面配置在Render的free-api地址，如 https://kimi-free-api-nut5.onrender.com 就是 https://kimi-free-api-nut5.onrender.com/ping，需要使用GET请求方法。
+1. 在你支持监控服务的框架或程序上面配置在Render的free-api地址，如 `https://kimi-free-api-nut5.onrender.com` 就是 `https://kimi-free-api-nut5.onrender.com/ping`，需要使用GET请求方法。
 
 2. 配置探测频率，建议5分钟一轮。
 
@@ -37,7 +37,7 @@ docker-compose -f all-free-api.yml up -d
 
 命令仅适用于Linux系统。
 
-1. 改写 scripts/render_keeplive.sh 文件，将循环遍历的ping地址换成你部署在Render的free-api地址，如 https://kimi-free-api-nut5.onrender.com 就是 https://kimi-free-api-nut5.onrender.com/ping。
+1. 改写 scripts/render_keeplive.sh 文件，将循环遍历的ping地址换成你部署在Render的free-api地址，如 `https://kimi-free-api-nut5.onrender.com` 就是 `https://kimi-free-api-nut5.onrender.com/ping`。
 
 2. 运行 `crontab -e` 命令，在打开的编辑器中添加如下内容（/path/to/render_keeplive.sh 替换为你的脚本路径）：
 
