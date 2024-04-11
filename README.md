@@ -33,7 +33,7 @@ docker-compose -f all-free-api.yml up -d
 
 2. 配置探测频率，建议5分钟一轮。
 
-#### 方案2：通过j脚本curl调用保活
+#### 方案2：通过脚本curl调用保活
 
 命令仅适用于Linux系统。
 
