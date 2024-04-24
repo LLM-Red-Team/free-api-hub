@@ -47,7 +47,7 @@ services:
     image: vinlic/qwen-free-api:latest
     restart: always
     ports:
-      - "10016:8000"#10015可以修改，8000不可以修改
+      - "10016:8000"  #10016可以修改，8000不可以修改
     expose:
       - "8000"
     environment:
@@ -65,5 +65,31 @@ services:
       - "8000"
     environment:
       - TZ=Asia/Shanghai      
+
+# 秘塔AI
+  metaso-free-api:
+    container_name: metaso-free-api
+    hostname: metasofree
+    image: vinlic/metaso-free-api:latest
+    restart: always
+    ports:
+      - "10018:8000"  #10018可以修改，8000不可以修改
+    expose:
+      - "8000"
+    environment:
+      - TZ=Asia/Shanghai
+
+# 讯飞星火SparkDesk
+  spark-free-api:
+    container_name: spark-free-api
+    hostname: sparkfree
+    image: vinlic/spark-free-api:latest
+    restart: always
+    ports:
+      - "10019:8000"  #10019可以修改，8000不可以修改
+    expose:
+      - "8000"
+    environment:
+      - TZ=Asia/Shanghai
       
 # api地址可以使用：http://hostname:prots
