@@ -13,6 +13,12 @@
 
 ![demo](https://github.com/LLM-Red-Team/free-api-hub/assets/20235341/5ce7c71d-3a4d-4469-9e4a-24ac9d78cc76)
 
+## 支持free-api的客户端
+
+由 [Clivia](https://github.com/Yanyutin753/lobe-chat) 二次开发的LobeChat [https://github.com/Yanyutin753/lobe-chat](https://github.com/Yanyutin753/lobe-chat)
+
+由 [时光@](https://github.com/SuYxh) 二次开发的ChatGPT Web [https://github.com/SuYxh/chatgpt-web-sea](https://github.com/SuYxh/chatgpt-web-sea)
+
 ## 核心资源
 
 ### all-free-api.yml
