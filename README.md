@@ -13,6 +13,10 @@
 
 ![demo](https://github.com/LLM-Red-Team/free-api-hub/assets/20235341/5ce7c71d-3a4d-4469-9e4a-24ac9d78cc76)
 
+## 文档FAQ
+
+请前往我们的文档站点：(https://llm-red-team.github.io/free-api/)[https://llm-red-team.github.io/free-api/]
+
 ## 支持free-api的客户端
 
 由 [Clivia](https://github.com/Yanyutin753/lobe-chat) 二次开发的LobeChat [https://github.com/Yanyutin753/lobe-chat](https://github.com/Yanyutin753/lobe-chat)
