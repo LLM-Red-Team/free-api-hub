@@ -15,7 +15,7 @@
 
 ## 文档FAQ
 
-请前往我们的文档站点：(https://llm-red-team.github.io/free-api/)[https://llm-red-team.github.io/free-api/]
+请前往我们的文档站点：[https://llm-red-team.github.io/free-api/](https://llm-red-team.github.io/free-api/)
 
 ## 支持free-api的客户端
 
