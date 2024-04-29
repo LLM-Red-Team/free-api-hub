@@ -12,7 +12,7 @@
 ./deploy.sh
 ```
 
-> 如果没办法运行，自己加个权限 `chmod 777 ./deploy.sh`
+> 如果没办法运行，自己加个权限 `chmod u+x ./deploy.sh`
 
 
 
