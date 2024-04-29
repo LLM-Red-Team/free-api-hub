@@ -25,6 +25,10 @@
 
 ## 核心资源
 
+### deploy-all-free-api
+
+由 [时光@](https://github.com/SuYxh) 贡献free-api系列部署脚本： [deploy-all-free-api](https://github.com/LLM-Red-Team/free-api-hub/tree/main/scripts/deploy-all-free-api)
+
 ### all-free-api.yml
 
 docker-compose一键启动所有free-api的脚本，运行以下命令启动。
