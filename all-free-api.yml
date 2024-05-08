@@ -91,5 +91,31 @@ services:
       - "8000"
     environment:
       - TZ=Asia/Shanghai
+
+# MiniMax海螺AI
+  hailuo-free-api:
+    container_name: hailuo-free-api
+    image: vinlic/hailuo-free-api:latest
+    hostname: hailuofree
+    restart: always
+    ports:
+      - "10020:8000" #10020可以修改，8000不可以修改
+    expose:
+      - "8000"
+    environment:
+      - TZ=Asia/Shanghai
+
+# 深度求索DeepSeek
+  deepseek-free-api:
+    container_name: deepseek-free-api
+    image: vinlic/deepseek-free-api:latest
+    hostname: deepseekfree
+    restart: always
+    ports:
+      - "10021:8000" #10021可以修改，8000不可以修改
+    expose:
+      - "8000"
+    environment:
+      - TZ=Asia/Shanghai
       
 # api地址可以使用：http://hostname:prots
